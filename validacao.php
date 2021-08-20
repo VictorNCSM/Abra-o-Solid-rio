@@ -55,7 +55,9 @@ if (isset($_POST["doador"])) {
 $autorizacao = $_POST["autozizacao"];
 
 
-mysqli_query($conexao, "insert into usuario(nome,email,senha,celular,telefone_fixo,cpf,dia,mes,ano,rua,bairro,numero,cidade,opcao,autorizacao) values('$nome','$email','$senha','$celular','$telefone','$cpf','$dia','$mes','$ano','$rua','$bairro','$numero','$cidade','$donatario','$doador')";)
+mysqli_query($conexao, "insert into usuario(nome,email,senha,celular,telefone_fixo,cpf,dia,mes,ano,rua,bairro,numero,cidade,donatario,doador,autorizacao) values('$nome','$email','$senha','$celular','$telefone','$cpf','$dia','$mes','$ano','$rua','$bairro','$numero','$cidade','$donatario','$doador','$autorizacao')");
+
+echo "O formulário foi enviado com sucesso. <a href='index.html'>Voltar à página inicial</a>.";
 
 
 
