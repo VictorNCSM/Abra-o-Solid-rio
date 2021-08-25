@@ -10,8 +10,10 @@ $senha = $_POST["senha"];
 
 $celular = $_POST["telefone"];
 
-if (isset($_POST["telefone"])) {
 
+
+if (isset($_POST["telefone"])) {
+    # valida se o telefone tem mais de 10 caracteres, se tiver, o 
     if (strlen($_POST["telefone"]) < 10) {
         echo "O número de telefone que você inseriu é muito curto. Por favor, <a href='formcadastro.html'>volte à página de cadastro</a>.";
     } else {

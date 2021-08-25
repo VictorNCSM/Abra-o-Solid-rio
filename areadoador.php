@@ -21,7 +21,7 @@
     </style>
 </head>
 <body>
-        <a href="dados.html" target="mainconfig">Dados</a><br/>
+        <a href="dados.php" target="mainconfig">Dados</a><br/>
         <a href="doacao.html" target="mainconfig">Doações</a>
 
         <iframe id="mainconfig" name="mainconfig" src="doacao.html" scrolling=auto></iframe>
