@@ -1,29 +1,52 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <title>Área de cadastro</title>
-    <meta charset="utf-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+<?
+session_start();
 
-    <style type="text/css">
-        
-        .mainconfig{
-            position:absolute;
-            height: 250px;
-            width: 100%;
-            top: 150px;
-        }
+# Verificar o login, retorna true se o login existir
+verifica_login = $_SESSION["login"];
 
-        a{
-            font-color: "#003889";
-        }
+verifica_senha = $_SESSION["senha"];
 
-    </style>
-</head>
-<body>
-        <a href="dados.php" target="mainconfig">Dados</a><br/>
-        <a href="doacao.html" target="mainconfig">Doações</a>
+if(($verfica_login == "true") and ($verifica_senha == "true")){
 
-        <iframe id="mainconfig" name="mainconfig" src="doacao.html" scrolling=auto></iframe>
-</body>
-</html>
+    echo '
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <title>Área de cadastro</title>
+        <meta charset="utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+        <style type="text/css">
+            
+            .mainconfig{
+                height: 250px;
+                width: 100%;
+                margin-top: 300px;
+            }
+
+            a{
+                font-color: "#003889";
+            }
+
+        </style>
+    </head>
+    <body>
+            <a href="dados.php" target="mainconfig">Dados</a><br/>
+            <a href="doacao.html" target="mainconfig">Doações</a><br/>
+            <a href="mensagem.php" target="mainconfig">Envie sua mensagem</a><br/>
+
+            <iframe id="mainconfig" name="mainconfig" src="doacao.html" scrolling=auto></iframe>
+    </body>
+    </html>';
+}
+else{
+    
+}
+
+
+
+
+    ?>
+
+
+
