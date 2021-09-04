@@ -6,6 +6,7 @@ verifica_login = $_SESSION["login"];
 
 verifica_senha = $_SESSION["senha"];
 
+# Se o login e a senha existirem, eles retornarão true e a página será executada
 if(($verfica_login == "true") and ($verifica_senha == "true")){
 
     echo '
@@ -40,6 +41,8 @@ if(($verfica_login == "true") and ($verifica_senha == "true")){
     </html>';
 }
 else{
+
+    echo 'Você não está logado. Vá à <a href="login.html">Página de login</a>.';
     
 }
 
