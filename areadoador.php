@@ -1,8 +1,8 @@
 <?
-session_start();
+include("validlogin.php");
 
 # Verificar o login, retorna true se o login existir
-verifica_login = $_SESSION["login"];
+verifica_login = $_SESSION["email"];
 
 verifica_senha = $_SESSION["senha"];
 
