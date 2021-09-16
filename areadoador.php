@@ -7,7 +7,7 @@ verifica_login = $_SESSION["email"];
 verifica_senha = $_SESSION["senha"];
 
 # Se o login e a senha existirem, eles retornarão true e a página será executada
-if(($verfica_login == "true") and ($verifica_senha == "true")){
+if(($verifica_login == "true") and ($verifica_senha == "true")){
 
     echo '
     <!DOCTYPE html>
