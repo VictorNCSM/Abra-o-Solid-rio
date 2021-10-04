@@ -29,25 +29,21 @@
       </div class="campo">
 
 
-   <form>
+   <form method="POST" action="validacao.php">
 
       <fieldset class="grupo">
-    
           <div class="campo">
-     	      
+
      	      <label for="nome"><strong>Nome</strong></label>
      	      <input type="text" name="nome" id="nome" required>
 
-
           </div class="campo"> 	
     
-     
- 
+
          <div class="campo">
      	      
      	      <label for="email"><strong>Email</strong></label>
      	      <input type="Email" name="email" id="email" required>
-
 
           </div class="campo"> 	
 
@@ -56,7 +52,6 @@
      	      
      	      <label for="senha"><strong>Senha</strong></label>
      	      <input type="text" name="senha" id="senha" required>
-
 
           </div class="campo"> 	
          
@@ -91,8 +86,8 @@
          <label for="dia"><strong>Dia</strong></label>
          <input type="text" name="dia" id="dia" required>
 
-         <label for="mês"><strong>Mês</strong></label>
-         <input type="text" name="mês" id="mês"required>
+         <label for="mes"><strong>Mês</strong></label>
+         <input type="text" name="mes" id="mês"required>
 
          <label for="ano"><strong>Ano</strong></label>
          <input type="text" name="ano" id="ano"required>
@@ -117,6 +112,9 @@
          <label for="cidade"><strong>Cidade</strong></label>
          <input type="text" name="cidade" id="cidade" required>
 
+         <label for="cep"><strong>CEP</strong></label>
+         <input type="text" name="cep" id="cep" required>
+
 
          </div class="campo">
 
@@ -126,9 +124,9 @@
 
           <div class="campo">
 
-           	<h2>Você está no Abraço Solidário porquê?</h2>
-           	  <label for= "donatario"><input type="radio" name="donatario" value="1" id="opcao1"> Sou doador</label>
-           	  <label for= "doador"><input type="radio" name="doador" value="2" id="opcao2">Sou donatário</label>
+           	<h2>Você está no Abraço Solidário por quê?</h2>
+           	  <label for= "donatario"><input type="radio" name="donatario" value="0" id="opcao1"> Sou doador</label>
+           	  <label for= "doador"><input type="radio" name="doador" value="1" id="opcao2">Sou donatário</label>
            	  
            </div class="campo">
            <br>
@@ -137,7 +135,7 @@
 
             <div class="campo">
               	    <label for="autorizacao">
-              	    <input type="checkbox" name="newsletter" id="autorizacao" required>
+              	    <input type="checkbox" name="autorizacao" required id="autorizacao">
               	    Você concorda com os termos de uso de seus dados?</label>
 
 
