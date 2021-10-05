@@ -55,32 +55,33 @@ $cidade = $_POST["cidade"];
 
 $cep = $_POST["cep"];
 
-    # salvamento das variáveis de donatário e doador
-    if (isset($_POST["donatario"])) {
-        $donatario = $_POST["donatario"];
-    } 
-    else{
-        $donatario = false;
-    }
 
-    if (isset($_POST["doador"])) {
-        $doador = $_POST["doador"];
+    # salvamento das variáveis de donatário e doador
+    if ((!isset($_POST["doador"]))) {
+        $doador = true;
     } 
-    else{
+    else {
         $doador = false;
     }
 
+    if ((!isset($_POST["donatario"]))) {
+        $donatario = true;
+    } else {
+        $donatario = false;
+    }
+
+
     # se o donatário for ativo, a opção será igual a zero
-    if($donatario == false){
-        $opcao = ;
+    if($donatario == true){
+        $opcao = 0;
     }
     else{
-        $opcao = 0;
+        $opcao = 1;
     }
     # Doador: opção = 1;
     # Donatário, opção = 0.
 
-        # se ele não for ativo, a opção será igual a um, que é o número para doador
+    # se ele não for ativo, a opção será igual a um, que é o número para doador
         
 $autorizacao = $_POST["autorizacao"];
 
