@@ -17,8 +17,9 @@
 
 
    <body>
-   	
 
+
+   
       <div class="campo">
 
        <h1 id="titulo">Cadastro de usuário</h1>
@@ -29,7 +30,7 @@
       </div class="campo">
 
 
-   <form method="POST" action="cadastro.php">
+   <form>
 
       <fieldset class="grupo">
     
@@ -55,7 +56,7 @@
          <div class="campo">
      	      
      	      <label for="senha"><strong>Senha:</strong></label>
-     	      <input type="password" name="senha" id="senha" required placeholder="Digite sua senha">
+     	      <input type="text" name="senha" id="senha" required placeholder="Digite sua senha">
 
 
           </div class="campo"> 	
@@ -69,7 +70,7 @@
          <input type="text" name="celular" id="celular" required placeholder="Digite seu celular">
 
          <label for="telefone"><strong>Telefone:</strong></label>
-         <input type="text" name="telefone" id="telefone" placeholder="Digite o seu telefone">
+         <input type="text" name="telefone" id="telefone" required placeholder="Digite o seu telefone">
 
          </div class="campo">
    
@@ -90,59 +91,63 @@
          <h2>Data de Nascimento</h2>
          <br>
  
-         <label for="dia"><strong>Dia:</strong></label>
-            <select id="dia" name="dia"  required="required">
-               <option selected="selected" value="">Selecione</option>
-               <option value=1>1</option>
-               <option value=2>2</option>
-               <option value=3>3</option>
-               <option value=4>4</option>
-               <option value=5>5</option>
-               <option value=6>6</option>
-               <option value=7>7</option>
-               <option value=8>8</option>
-               <option value=9>9</option>
-               <option value=10>10</option>
-               <option value=11>11</option>
-               <option value=12>12</option>
-               <option value=13>13</option>
-               <option value=14>14</option>
-               <option value=15>15</option>
-               <option value=16>16</option>
-               <option value=17>17</option>
-               <option value=18>18</option>
-               <option value=19>19</option>
-               <option value=20>20</option>
-               <option value=21>21</option>
-               <option value=22>22</option>
-               <option value=23>23</option>
-               <option value=24>24</option>
-               <option value=25>25</option>
-               <option value=26>26</option>
-               <option value=27>27</option>
-               <option value=28>28</option>
-               <option value=29>29</option>
-               <option value=30>30</option>
-               <option value=31>31</option>
+         <label for= "dia"><strong>Dia:</strong></label>
+              <select name="quantidade" required="required">
+              <option selected="selected" value="">Selecione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="20">21</option>
+              <option value="20">22</option>
+              <option value="20">23</option>
+              <option value="20">24</option>
+              <option value="20">25</option>
+              <option value="20">26</option>
+              <option value="20">27</option>
+              <option value="20">28</option>
+              <option value="20">29</option>
+              <option value="20">30</option>
+              <option value="20">31</option>
+
             </select>
 
 
-              <label for= "mes"><strong>Mês:</strong></label>
-            <select name="mes" id="mes" required="required">
-               <option selected value="">Selecione</option>
-               <option value="Janeiro">Janeiro</option>
-               <option value="Fevereiro">Fevereiro</option>
-               <option value="Março">Março</option>
-               <option value="Abril">Abril</option>
-               <option value="Maio">Maio</option>
-               <option value="Junho">Junho</option>
-               <option value="Julho">Julho</option>
-               <option value="Agosto">Agosto</option>
-               <option value="Setembro">Setembro</option>
-               <option value="Outubro">Outubro</option>
-               <option value="Novembro">Novembro</option>
-               <option value="Dezembro">Dezembro</option>
+              <label for= "Mês"><strong>Mês:</strong></label>
+              <select name="quantidade" required="required">
+              <option selected="selected" value="">Selecione</option>
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+
             </select>
+
+  
         
 
           <label for="ano"><strong>Ano:</strong></label>
@@ -172,6 +177,8 @@
 
 
          </div class="campo">
+
+
          <br>
 
 
@@ -181,30 +188,26 @@
 
             <br>
 
-           	<input type="radio" name="escolher" value="1">Sou doador
-            <input type="radio" name="escolher" value="0">Sou donatário
+           	<input type="radio" name="escolher" value="opcao1">Sou doador
+            <input type="radio" name="escolher" value="opcao2">Sou donatário
 
            	  
            </div class="campo">
            <br>
 
-
-
+          <label>
+         <input type="text" name="descricao" cols="50" rows="5" placeholder="Descrição da roupa doada"></label>
+         <br>
+         <br>
+         
             <div class="campo">
-              	    <label for="termos">
-              	    <input type="checkbox" name="termos" id="termos" required>
+              	    <label for="autorizacao">
+              	    <input type="checkbox" name="newsletter" id="autorizacao" required>
               	    <strong>Você concorda com os termos de uso de seus dados?</strong></label>
 
 
             </div> 
 
-            <div class="campo">
-                    <label for="autorizacao">
-                    <input type="checkbox" name="autorizacao" id="autorizacao" value=1>
-                    <strong>Você concorda que sua atividade no site pode ser exibida?</strong></label>
-
-
-            </div>
         
         </fieldset class="grupo">
 

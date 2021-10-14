@@ -9,8 +9,7 @@
 #titulo{
 
   color:#003889;
-  margin-left: 21%;
-  font-size: 3.2em
+  margin-left: 24%
 
 
 
@@ -19,9 +18,7 @@
 #subtitulo {
 
   color:#0074FF;
-  margin-left: -1%;
-  font-size: 2.2em
-
+  margin-left: 24%
 
 
 }
@@ -54,14 +51,24 @@ body {
  margin-bottom: 0.2em;
  color:#0074FF;
 
- 
+
+}
+
+
 
 
 }
 
+.campo select option{
+
+padding-right: 1em;
+
+}
+
+
 .botao{
 
- font-size: 1.1em;
+ font-size: 0.8em;
  font-family: Montserrat Regular;
  padding: 10px;
  box-shadow: 0 3px 
@@ -69,21 +76,9 @@ body {
 }
 
 
-.botao:hover{
-
- font-size: 1.5em;
- font-family: Montserrat Regular;
- padding: 10px;
- box-shadow: 0 3px;
- background:#0074FF;
- color: #fff;
-
-}
-
-
 #linkstopo{
-            width: 1200%; 
-            height: 140px;
+            width: 110%; 
+            height: 130px;
             text-align: right; 
             align: center;
             background-color: red; 
@@ -100,13 +95,13 @@ background: linear-gradient(0deg, rgba(0,56,137,1) 0%, rgba(0,255,229,1) 100%);
 
 
 #rodapé{
-        width: 200%; 
-        height: 15%;
+        width: 80%; 
+        height: 10px;
         position: absolute; 
-        margin-left: -20%;
+        margin-left: -50%;
         bottom: 0px;
         float: left;
-        line-height: 100px;
+        line-height: 80px;
         background: rgb(0,255,229);
 background: linear-gradient(0deg, rgba(0,255,229,1) 0%, rgba(0,56,137,1) 100%);
     }
@@ -126,6 +121,18 @@ background: linear-gradient(0deg, rgba(0,255,229,1) 0%, rgba(0,56,137,1) 100%);
                 align-items: center;
 
 }
+
+
+@keyframes animação{
+    0% {margin-left: 0;}
+    20% {margin-left: 0;}
+    25% {margin-left: -100%;}
+    45% {margin-left: -100%;}
+    50% {margin-left: -200%;}
+    70% {margin-left: -200%;}
+    75% {margin-left: -300%;}
+    95% {margin-left: -300%;}
+    100% {margin-left: -400%;}
 
 
  .search-txt{
@@ -154,5 +161,11 @@ background: linear-gradient(0deg, rgba(0,255,229,1) 0%, rgba(0,56,137,1) 100%);
 
 
 
+.botao:hover{
 
-
+ font-size: 1.3em;
+ font-family: Montserrat Regular;
+ padding: 10px;
+ box-shadow: 0 3px;
+ background:#0074FF;
+ color: #fff;

@@ -1,159 +1,207 @@
 <!DOCTYPE html>
+
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width-device-width, initial-scale=1.0">
-		<link rel="stylesheet" type="text/css" href="formdoacao.css" media="screen"> 
 
-		<title>Abraço Solidário - Doação</title>
-	</head>
-
-	<body>
-
-		<div class="campo">
-
-		<h1 id="titulo">Formulário de Doação</h1>
-		<h2 id="subtitulo">Nos informe sobre sua doação</h2>
-		<br>
-
-		</div>
-
-		<form method="post" action="doacao.php" enctype="multipart/form-data">
-			<fieldset class="grupo">
-
-				<div class="campo">
-					<label for="imagem"><strong>Imagem:</strong></label>
-					<input type="file" name="imagem" id="imagem" required>
-				</div>
-
-				<br>
-
-				<div class="campo">
-
-					<label for= "quantidade"><strong>Quantidade da doação:</strong></label>
-						<select name="quantidade" required="required">
-							<option selected="selected" value="">Selecione</option>
-							<option value=1>1</option>
-							<option value=2>2</option>
-							<option value=3>3</option>
-							<option value=4>4</option>
-							<option value=5>5</option>
-							<option value=6>6</option>
-							<option value=7>7</option>
-							<option value=8>8</option>
-							<option value=9>9</option>
-							<option value=10>10</option>
-							<option value=11>11</option>
-							<option value=12>12</option>
-							<option value=13>13</option>
-							<option value=14>14</option>
-							<option value=15>15</option>
-							<option value=16>16</option>
-							<option value=17>17</option>
-							<option value=18>18</option>
-							<option value=19>19</option>
-							<option value=20>20</option>
-						</select>
-				</div>
-
-				<br/>
-
-				<div class="campo">
-					<label for= "tipo"><strong>Qual a peça de roupa que você deseja doar?:</strong></label>
-					<select name="tipo" required="required">
-						<option selected="selected" value="">Selecione</option>
-						<option value=1>Camiseta</option>
-						<option value=2>Shorts</option>
-						<option value=3>Calça moletom</option>
-						<option value=4>Calça jeans</option>
-						<option value=5>Camiseta manga longa</option>
-						<option value=6>Blusa de moletom</option>
-					</select>
-				</div>
-				
-				<br/>
-
-				<div class="campo">
-					<label for="cor"><strong>Qual a cor da peça de roupa que você deseja doar?:</strong></label>
-					<select name="cor" required="required">
-						<option selected="selected" value="">Selecione</option>
-						<option value=1>Vermelho</option>
-						<option value=2>Azul</option>
-						<option value=3>Amarelo</option>
-						<option value=4>Laranja</option>
-						<option value=5>Verde</option>
-						<option value=6>Roxo</option>
-						<option value=7>Azul claro</option>
-					</select>
-				</div>
-
-				<br/>
-				
-
-				<div class="campo">
-					<h2>Sexo</h2>
-					<input type="radio" name="sexo" value=1>Feminino</input>
-					<input type="radio" name="sexo" value=2>Masculino</input>
-				</div>
-
-				<div class="campo">
-					<h2>Faixa Etária</h2>
-					<br>
-
-					<input type="radio" name="faixa_etaria" value=1>Infantil
-					<input type="radio" name="faixa_etaria" value=2>Adulto	
-				</div>
-
-				<br>
-
-				<div class="campo">
-					<h2>Endereço de Retirada</h2>
-					<br>
-
-					<input type="radio" name="retirada" value=1>Retirar na E.T.E.C
-					<input type="radio" name="retirada" value=2>Retirar no endereço cadastrado
-
-					<br>
-				</div class="campo">
-
-				<br>
-
-				<div class="campo">
-					
-					<label for="tamanho"><strong>Tamanho:</strong></label>
-					<select name="tamanho" required="required">
-						<option selected="selected" value="">Selecione</option>
-						<option value="P">P</option>
-						<option value="M">M</option>
-						<option value="G">G</option>
-						<option value="GG">GG</option>
-						<option value="XG">XG</option>
-						<option value="XXG">XXG</option>
-					</select>
-					<br>
-				</div>
+<head>
 
 
 
-				</div class="campo">
-					<h2>Descrição da roupa</h2>
-					<br>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+     <link rel="stylesheet" type="text/css" href="formdoacao.css" media="screen"> 
 
-					<label for="descricao"><strong>Descrição da roupa(se necessário)</strong></label>
-					<input type="text" name="descricao" id="descricao">
-				</div>
+	<title>Abraço Solidário - Doação</title>
 
-				<div class="campo">
-					<br>
+	<br>
 
-					<label for="autorizacao">
-					<input type="checkbox" name="newsletter" id="autorizacao" required>
-					<strong>Você concorda com o uso de seu endereço cadastrado?</strong></label>
 
-				</div>
-				<br>
-				<button class="botao" type="submit">Enviar</button>
-			</fieldset>
-		</form>
-	</body>
+</head>
+
+<body>
+
+
+
+
+<div class="campo">
+
+
+<h1 id="titulo">Formulário de Doação</h1>
+<h2 id="subtitulo">Nos informe sobre sua doação</h2>
+<br>
+
+</div class="campo">
+
+
+
+<form>
+
+
+<fieldset class="grupo">
+
+
+<div class="campo">
+	
+<label for="imagem"><strong>Imagem:</strong></label>
+<input type="file" name="imagem" id="imagem" required>
+
+</div class="campo">
+
+<br>
+
+ <div class="campo">
+
+
+<label for= "quantidade"><strong>Quantidade da doação:</strong></label>
+           	  <select name="quantidade" required="required">
+           	  <option selected="selected" value="">Selecione</option>
+           	  <option value="1">1</option>
+           	  <option value="2">2</option>
+           	  <option value="3">3</option>
+           	  <option value="4">4</option>
+           	  <option value="5">5</option>
+           	  <option value="6">6</option>
+           	  <option value="7">7</option>
+           	  <option value="8">8</option>
+              <option value="9">9</option>
+           	  <option value="10">10</option>
+           	  <option value="11">11</option>
+           	  <option value="12">12</option>
+           	  <option value="13">13</option>
+           	  <option value="14">14</option>
+           	  <option value="15">15</option>
+           	  <option value="16">16</option>
+           	  <option value="17">17</option>
+           	  <option value="18">18</option>
+              <option value="19">19</option>
+           	  <option value="20">20</option>
+
+           	</select>
+
+           
+            <div class="campo">
+
+           </div class="campo">
+
+            <br>
+            
+	    <div class="campo">
+
+
+		<label for= "tipo"><strong>Qual a peça de roupa que você deseja doar?:</strong></label>
+			<select name="quantidade" required="required">
+				<option selected="selected" value="">Selecione</option>
+				<option value=1>Camiseta</option>
+				<option value=2>Shorts</option>
+				<option value=3>Calça moletom</option>
+				<option value=4>Calça jeans</option>
+				<option value=5>Camiseta manga longa</option>
+				<option value=6>Blusa de moletom</option>
+		
+		</select>
+        
+       <div class ="campo">    
+       <br>
+            
+
+           	<h2>Sexo</h2>
+
+            <br>
+            <br>
+
+           	<input type="radio" name="sexo" value=1>Feminino
+            <input type="radio" name="sexo" value=2>Masculino
+
+           	  
+           </div class="campo">
+
+           <div class="campo">
+
+
+           	<h2>Faixa Etária</h2>
+
+            <br>
+
+           	<input type="radio" name="faixa_etaria" value=1>Infantil
+            <input type="radio" name="faixa_etaria" value=2>Adulto
+
+           	  
+           </div class="campo">
+
+
+
+          <br>
+
+
+
+           </div class="campo">
+          
+          <h2>Endereço de Retirada</h2>
+
+          <br>
+
+          <input type="radio" name="retirada" value=1>Retirar na E.T.E.C
+          <input type="radio" name="retirada" value=2>Retirar no endereço cadastrado
+
+     
+           <br>
+
+           </div class="campo">
+
+           
+           <br>
+
+           <div class="campo">
+           	
+            <label for="tamanho"><strong>Tamanho:</strong></label>
+            <input type="text" name="tamanho" id="tamanho" placeholder="Tamanho da roupa">
+            
+            <br>
+
+
+
+            </div class="campo">
+
+
+            <h2>Descrição da roupa</h2>
+
+            <br>
+
+           <label for="descricao"><strong>Descrição da roupa(se necessário)</strong>
+           <input type="text" name="descricao" id="descricao">
+
+           <br>   
+
+
+
+            
+
+           </div class="campo">
+
+           <br>
+    
+             <label for="autorizacao">
+             <input type="checkbox" name="newsletter" id="autorizacao" required>
+             <strong>Você concorda com o uso de seu endereço cadastrado?</strong></label>
+
+
+
+
+            
+            <div class="campo">
+            <br>
+    
+   <button class="botao" type="submit">Enviar</button>
+
+
+   </fieldset class="grupo">
+
+
+</form>
+
+
+
+
+
+</body>
+
 </html>
