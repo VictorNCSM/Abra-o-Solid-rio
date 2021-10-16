@@ -31,28 +31,24 @@ section{
     margin: 0 auto;
     width: 99.9%;
     height: 800px;
-    border-style: solid;
-    border-color: orange;
+    
 }
 
 #menu{
     width: 100%;
     float: center;
     position: absolute;
-    height: 800px;
+    height: 850px;
     right:50px;
-    border-style: solid;
-    border-color: red;
+    
 }
 
 footer{
     position: absolute;
     height: 100px;  
-    top: 928px;
+    top: 1000px;
     left: -5px;
-    border-style: solid;
-    border-color: red;
-    width: 99.9%;
+    width: 101.9%;
 }
 
 body{
@@ -139,10 +135,22 @@ h3{
 
     margin-right: 20px;
 
+}
 
+
+.Rodapé {
+
+
+background: rgb(0,255,229);
+background: linear-gradient(0deg, rgba(0,255,229,1) 0%, rgba(0,56,137,1) 100%);
 
 }
 
 
+p {
 
+
+
+    
+}
 
