@@ -33,7 +33,7 @@ $dados = mysqli_fetch_array($consulta);
         <input type="text" name="senha" value=<?php echo $dados["senha"]; ?>><br><br>
 
         Celular:<br>
-        <input type="text" name="celular" value= <?php echo $dados["celular"]; ?> > <br><br>
+        <input type="text" name="celular" value=<?php echo $dados["celular"]; ?>> <br><br>
 
         Telefone:<br>
         <input type="text" name="telefone_fixo" value=<?php echo $dados["telefone_fixo"]; ?>><br><br>
@@ -45,8 +45,24 @@ $dados = mysqli_fetch_array($consulta);
         <input type="text" name="dia" value=<?php echo $dados["dia"]; ?>><br><br>
 
         Mês de nascimento:<br>
-        <input type="text" name="mes" value=<?php $dados["mes"]; ?>><br><br>
+        <select name="mes" id="mes">
+            <option selected value="">Selecione</option>
+            <option value="Janeiro">Janeiro</option>
+            <option value="Fevereiro">Fevereiro</option>
+            <option value="Março">Março</option>
+            <option value="Abril">Abril</option>
+            <option value="Maio">Maio</option>
+            <option value="Junho">Junho</option>
+            <option value="Julho">Julho</option>
+            <option value="Agosto">Agosto</option>
+            <option value="Setembro">Setembro</option>
+            <option value="Outubro">Outubro</option>
+            <option value="Novembro">Novembro</option>
+            <option value="Dezembro">Dezembro</option>
+        </select> 
 
+        <br/><br/>
+        
         Ano de nascimento:<br>
         <input type="text" name="ano" value=<?php echo $dados["ano"]; ?>><br><br>
 
@@ -65,7 +81,7 @@ $dados = mysqli_fetch_array($consulta);
         CEP:<br>
         <input type="text" name="cep" value=<?php echo $dados["cep"]; ?>><br><br>
 
-        <input type="submit" Value="Enviar">
+        <input type="submit" value="Enviar">
 
     </form>
 

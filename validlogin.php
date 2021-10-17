@@ -25,7 +25,7 @@ if(isset($_POST["login"]) and isset($_POST["senha"])){
             $_SESSION["senha"] = $dados_usuario["senha"];
 
 
-            echo 'Cadastro autorizado com sucesso. <a href="areadoador.php">Vá para a página de usuário</a> ou para a <a href="index.html">página inicial</a>.';
+            echo 'Login autorizado com sucesso. <a href="areadoador.php">Vá para a página de usuário</a> ou para a <a href="index.html">página inicial</a>.';
         } else {
             echo 'Seu login ou senha estão incorretos, por favor, insira novamente voltando à <a href="login.html">página de login</a>.';
         }

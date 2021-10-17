@@ -17,7 +17,7 @@ $dados = mysqli_fetch_array($consulta);
 <head>
     <title>Área do doador</title>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <style type="text/css">
         .mainconfig {
@@ -34,7 +34,7 @@ $dados = mysqli_fetch_array($consulta);
 
 <body>
 
-    <a href="dados.php" target="mainconfig">Dados</a><br />
+    <a href="dados.php">Dados</a><br />
     <a href=<?php if ($dados['opcao'] == 1) {
                 echo '"formdoacao.html" target="mainconfig"> Doações';
             } else {
@@ -42,7 +42,7 @@ $dados = mysqli_fetch_array($consulta);
             } ?></a><br />
         <a href="mensagem.php" target="mainconfig">Envie sua mensagem</a><br />
 
-        <iframe id="mainconfig" name="mainconfig" src="dados.php" scrolling=auto frameborder="0" width=100% height=800px></iframe>
+        <iframe id="mainconfig" name="mainconfig" scrolling=auto frameborder="0" width=100% height=800px></iframe>
 </body>
 
 </html>

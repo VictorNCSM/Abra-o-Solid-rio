@@ -1,0 +1,10 @@
+.texto{
+    text-align:left;
+    color: #000;
+    font-family: Antapani,Verdana;
+}
+
+@font-face {
+    font-family: Antapani,Verdana;
+    src: url(fontes/Antapani-ExtraBold.otf);
+}
