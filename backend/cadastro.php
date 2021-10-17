@@ -86,7 +86,7 @@ $celular = "(11)$celular";
                 if ($dados["email"] == False) {
                     mysqli_query($conexao, "INSERT into usuario(nome,email,senha,celular,telefone_fixo,cpf,dia,mes,ano,rua,bairro,numero,cidade,cep,opcao,autorizacao) values('$nome','$email','$senha','$celular','$telefone','$cpf','$dia','$mes','$ano','$rua','$bairro','$numero','$cidade','$cep','$opcao','$autorizacao')");
 
-                    echo "O formulário foi enviado com sucesso. <a href='index.html'>Voltar à página inicial</a> ou <a href='login.html'>Ir à página de login</a>.";
+                    echo "O formulário foi enviado com sucesso. <a href='../index.html'>Voltar à página inicial</a> ou <a href='../login.html'>Ir à página de login</a>.";
                 }
                 if ($dados["email"] == True) {
                     echo "Você já está cadastrado em nosso site. Por favor, <a href='login.html'>logue-se</a>.";

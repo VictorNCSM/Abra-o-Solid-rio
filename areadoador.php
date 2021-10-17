@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("conexao.php");
+include("backend/conexao.php");
 
 # Verificar o login, retorna true se o login existir
 $login = $_SESSION["email"];
