@@ -124,8 +124,8 @@
         <div data-u="slides" style="cursor:default;position:relative;top:0px;left:240px;width:720px;height:480px;overflow:hidden;">
 
             <?php
-                include("conexao.php");
-                $consulta = mysqli_query($conexao,"select * from doacao");
+                include("../backend/conexao.php");
+                $consulta = mysqli_query($conexao,"select * from doacao where id_status = 1");
 
                 while($dados=mysqli_fetch_array($consulta)) {
                     echo "<div>
