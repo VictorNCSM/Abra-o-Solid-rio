@@ -18,9 +18,15 @@ header{
     background: rgb(0,56,137);
 }   
 
+@font-face {
+    font-family: antapani, Calibri;
+    src: url("fontes/Antapani-ExtraBold.otf");
+}
+
 .link{
     text-decoration: none;
-    color: white; 
+    color: white;
+    font-family: antapani, Calibri;
 }
 
 section{
@@ -33,6 +39,7 @@ section{
     border-style: solid;
     border-color: orange;
 }
+
 
 #menu{
     width: 100%;
